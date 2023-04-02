@@ -1,4 +1,6 @@
 import sys
+import sys
+sys.stdout.reconfigure(encoding='utf-8')
 
 # Parse CLI flags
 args = sys.argv[1:]
