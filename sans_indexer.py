@@ -115,7 +115,7 @@ for word in set(total_words):
 results.sort(key=str.casefold)
 
 # Write output to file
-with open(options.output_file, "w") as f:
+with open(options.output_file, "w", encoding='utf8') as f:
     for result in results:
         f.write(result + "\n")
 print(f"Written index to {options.output_file}")
