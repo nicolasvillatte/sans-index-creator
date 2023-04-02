@@ -8,7 +8,7 @@ if len(args) == 0:
 # Get file data
 index = {}
 for count, filename in enumerate(args):
-    with open(filename, "r") as f:
+    with open(filename, "r", encoding='utf8') as f:
         for line in f.read().split("\n"):
             if ": " not in line:
                 continue
