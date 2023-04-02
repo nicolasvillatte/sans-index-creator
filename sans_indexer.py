@@ -64,7 +64,7 @@ def word_is_eligible(word):
     return True
 
 # Get pages in pdf
-with open(options.input_file, "r") as f:
+with open(options.input_file, "r", encoding='utf8') as f:
     data = f.read()
     pages = data.split(delimeter)[1:]
 
